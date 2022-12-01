@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div id="heading">
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </div>
+
+    <div id="main">
+        <form id="survey-form">
+            <div id="input-field">
+                <label for="name-label"></label>
+                <input id="name" type="name" name="name" required placeholder="Enter your name">
+                <label for="email-label"></label>
+                <input type="email-label" id="email" required placeholder="Enter your email" pattern="[^@\s]+@[^@\s]+">
+                <label for="number-label"></label>
+                <input type="number" name="number" id="number" min="13" max="110">
+            </div>
+
+            <div id="dropdown">
+                <label for="dropdown-label">Which option best describes your current role?</label>
+                <select name="role" id="dropdown"></select>
+                <option value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="full-time">Full-Time Job</option>
+                <option value="part-time">Part-Time Job</option>
+                </select>
+            </div>
+
+            <div id="radio-button">
+                <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
+                <input type="radio" name="recommend" id="Absolutely" value="absolutely" checked>Absolutely
+                <input type="radio" name="recommend" id="Maybe" value="maybe">Maybe
+                <input type="radio" name="recomment" id="No" value="no">No 
+            </div>
+
+            <div id="dropdown-two">
+                <label for="feature">What is your favorite feature of freeCodeCamp:</label>
+                <select name="feature" id="dropdown-two">
+                <option value="">Select an option</option>
+                <option value="challenges">Challenges</option>
+                <option value="projects">Projects</option>
+                <option value="community">Community</option>
+                </select>
+            </div>
+
+            <div id="checkbox">
+                <label for="improve">What would you like to see improved?</label>
+                <input type="checkbox" name="improve1" id="front-end">Front-end Projects
+                <input type="checkbox" name="improve2" id="back-end">Back-end Projects
+                <input type="checkbox" name="improve3" id="Forum">Forum
+            </div>
+
+            <div id="textarea">
+                <label for="comment-label">Any comments or suggestions?</label>
+                <textarea placeholder="Enter your comment here..." cols="30" rows="10"></textarea>
+            </div>
+
+            <div id="ending">
+                <input type="submit" id="submit">
+            </div>
+
+        </form>
+
+
+    </div>
+
+</body>
+</html>
